@@ -1,158 +1,180 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Faça Parte</title>
-    <link rel="stylesheet" href="Css/estilo-faça_parte.css" />
-    <script src="padronizar.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../Sprint 3 - HTML e CSS/Css/normalize.css" />
-  </head>
-  <body onload="includeHeader(); includeFooter();">
-    <!-- Conteúdo da página -->
-    <main>
-      <section id="part-1">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4" style="border: 1px solid red">
-              <img src="imagens/3.png" alt="" />
-              <h3>
-                Faça a diferença na vida de cães e <br />gatos resgatados sem
-                sair de casa!
-              </h3>
 
-              <p>
-                Em poucos cliques, destine boas ações e doações de forma segura
-                para instituições especializadas na causa animal.
-              </p>
-            </div>
-            <div class="col-md-4" style="border: 1px solid red">
+<head>
+  <title>Faça Parte</title>
+  <link rel="stylesheet" href="Css/estilo-faça_parte.css" />
+  <script src="padronizar.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../Sprint 3 - HTML e CSS/Css/normalize.css" />
+</head>
+
+<body onload="includeHeader(); includeFooter();">
+  <!-- Conteúdo da página -->
+  <main>
+    <section id="part-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="imagens/3.png" alt="" />
+            <p>
+              Em poucos cliques, destine boas ações e doações de forma segura
+              para instituições especializadas na causa animal.
+            </p>
+          </div>
+          <div class="col-md-8 mt-5 text-center d-none" id="apareça1">
+            <h1 id="mensagemBoasVindas" class="mt-5 pt-5">
+            </h1>
+            <h3 class="d-none d-md-block ">
+              Agradecemos sinceramente pelo seu interesse em colaborar
+              conosco. Sua contribuição não apenas nos beneficia, mas também
+              apoia as organizações que cuidam dos animais de rua.
+            </h3>
+            <form>
+              <h3>Links Clicáveis</h3>
+              <p>Formas de nos ajudar:</p>
+              <ul class="list-group">
+                <li class="list-group-item"><a href="#nossalojinha" class="link" onclick="linkClicado(1)">Comprando em nossa Lojinha</a></li>
+                <li class="list-group-item"><a href="#compartilhandoconosco" class="link" onclick="linkClicado(2)">Compartilhando</a></li>
+                <li class="list-group-item"><a href="#marketingconosco" class="link" onclick="linkClicado(3)">Marketing</a></li>
+                <li class="list-group-item"><a href="#programeconosco" class="link" onclick="linkClicado(4)">Progamando</a></li>
+              </ul>
+            </form>
+          </div>
+          <div class="col-md-4 " id="logado">
+            <div id="idform">
               <h2 class="text-center">Registro</h2>
-              <form id="registro-form">
+              <form id="registro-form ">
                 <div class="mb-3">
-                  <label for="nomeCompleto" class="form-label"
-                    >Nome Completo:</label
-                  >
-                  <input
-                    type="text"
-                    id="nomeCompleto"
-                    class="form-control"
-                    required
-                  />
+                  <label for="nomeCompleto" class="form-label">Nome Completo:</label>
+                  <input type="text" id="nomeCompleto" class="form-control" placeholder="Luth Melhor Prof" />
                 </div>
                 <div class="mb-3">
                   <label for="nomeSocial" class="form-label">Nome Social</label>
-                  <input
-                    type="text"
-                    id="nomeSocial"
-                    class="form-control"
-                    required
-                  />
+                  <input type="text" id="nomeSocial" class="form-control"
+                    placeholder="Dá uns descontos nas pizzas pf" />
                 </div>
                 <div class="mb-3">
                   <label for="email" class="form-label">Email:</label>
-                  <input
-                    type="email"
-                    id="email"
-                    class="form-control"
-                    required
-                  />
+                  <input type="email" id="email" class="form-control" placeholder="exemplo@outlook.com" />
                 </div>
                 <div class="mb-3">
                   <label for="cpf" class="form-label">CPF:</label>
-                  <input
-                    type="text"
-                    id="cpf"
-                    class="form-control"
-                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
-                    placeholder="Ex. 123.456.789-00"
-                    required
-                  />
+                  <input type="text" id="cpf" class="form-control" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                    placeholder="Ex. 123.456.789-00" />
                 </div>
                 <div class="mb-3">
                   <label for="senha" class="form-label">Senha:</label>
-                  <input
-                    type="password"
-                    id="senha"
-                    class="form-control"
-                    required
-                  />
+                  <input type="password" id="senha" class="form-control" />
                 </div>
                 <div class="mb-3">
-                  <label for="confirmarSenha" class="form-label"
-                    >Confirme a Senha:</label
-                  >
-                  <input
-                    type="password"
-                    id="confirmarSenha"
-                    class="form-control"
-                    required
-                  />
-                  <button
-                    type="button"
-                    class="btn btn-primary mt-2"
-                    onclick="registrarUsuario()"
-                  >
+                  <label for="confirmarSenha" class="form-label">Confirme a Senha:</label>
+                  <input type="password" id="confirmarSenha" class="form-control" />
+                  <button type="button" class="btn btn-primary mt-2 " onclick="registrarUsuario()">
                     Registrar
+                  </button>
+                  <button type="button" class="btn btn-primary mt-2 " onclick="" id="botaologin">
+                    Ir para Login
                   </button>
                 </div>
               </form>
             </div>
-            <div class="col-md-4" style="border: 1px solid red">
-              <div id="login-container" class="container">
-                <h2>Login</h2>
-                <form id="login-form">
-                  <div class="mb-3">
-                    <label for="loginEmail" class="form-label"
-                      >Email ou CPF:</label
-                    >
-                    <input
-                      type="text"
-                      id="loginEmail"
-                      class="form-control"
-                      required
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="loginSenha" class="form-label">Senha:</label>
-                    <input
-                      type="password"
-                      id="loginSenha"
-                      class="form-control"
-                      required
-                    />
-                  </div>
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    onclick="fazerLogin()"
-                  >
-                    Entrar
-                  </button>
-                </form>
-              </div>
+          </div>
+
+          <div class="col-md-4 " id="logado">
+            <img src="/Imagens/ajude.jpg" alt="" class="image image-right" id=  "image-frente" />
+            <div id="login-container" class="container d-none">
+              <h2>Login</h2>
+              <form id="login-form">
+                <div class="mb-3">
+                  <label for="loginEmail" class="form-label">Email:</label>
+                  <input type="text" id="loginEmail" class="form-control" />
+                </div>
+                <div class="mb-3">
+                  <label for="loginSenha" class="form-label">Senha:</label>
+                  <input type="password" id="loginSenha" class="form-control" />
+                </div>
+                <button type="button" class="btn btn-primary" onclick="fazerLogin()" >
+                  Entrar
+                </button>
+                <button type="button" class="btn btn-primary" onclick="" id="botaoregistro">
+                  Ir para Registrar
+                </button>
+              </form>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <script src="Js/faça_parte.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Script específico da página -->
-  </body>
+    <section class="parallax d-none" id="parte-2">
+      <div>
+        <div id="nossalojinha" class="caixa1">
+          <img src="/Sprint 3 - HTML e CSS/imagens/lojinha/11.png" alt="" width="100%" height="500px" />
+          <div class="conteudo-titulo">
+            <span  class="titulo">Comprando em nossa lojinha</span>
+          </div>
+        </div>
+        <div class="conteudo">
+          <p>
+            80% do dinheiro arrecadado é destinado para ajudar as ongs, 10%
+            para o funcionamento do nosso site, melhorando a experiência do
+            usuário, e 10% para campanhas estratégicas de marketing.
+          </p>
+        </div>
+
+        <div id="compartilhandoconosco" class="caixa2">
+          <img src="/Imagens/compartilhar.webp" alt="" width="100%" height="500px" />
+          <div class="conteudo-titulo">
+            <span class="titulo">Compartilhando</span>
+          </div>
+        </div>
+        <div class="conteudo">
+          <p>
+            A divulgação é essencial para o nosso trabalho, pois quanto maior
+            o alcance, mais impacto podemos causar na assistência aos
+            adoráveis felinos e caninos.
+          </p>
+        </div>
+        <div id="marketingconosco" class="caixa3">
+          <img src="/Imagens/marketing.avif" alt="" width="100%" height="500px" />
+          <div class="conteudo-titulo">
+            <span class="titulo">Marketing</span>
+          </div>
+        </div>
+        <div class="conteudo">
+          <p>
+            Se você possui habilidades em marketing, nossa equipe está sempre
+            aberta a novas ideias e colaborações.
+          </p>
+        </div>
+        <div id="programeconosco" class="caixa4">
+          <img src="/Imagens/programador.webp" alt="" width="100%" height="500px" />
+          <div class="conteudo-titulo">
+            <span class="titulo">Progamando</span>
+          </div>
+        </div>
+        <div class="conteudo">
+          <p>
+            Se você possui habilidades de programação, nosso site está em
+            constante evolução para proporcionar a melhor experiência ao nosso
+            público e adoraríamos sua ajuda.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="Js/faça_parte.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Script específico da página -->
+</body>
+
 </html>

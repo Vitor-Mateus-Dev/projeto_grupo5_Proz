@@ -8,7 +8,10 @@ main {
 p {
   color: #6d454c;
   font-weight: 540;
-  font-size: 1.1em;
+  font-size: 1.2em;
+}
+h1 {
+  color: #6d454c;
 }
 
 /*Section part-1 -------------------------------- */
@@ -25,7 +28,7 @@ section#part-1 img {
   top: 20px;
   background-color: rgba(255, 255, 255, 0.3);
 }
-section {
+section#part-1 {
   height: 700px;
 }
 div.col-md-4 {
@@ -35,7 +38,6 @@ div.col-md-4 {
 
 #registro-form {
   height: 570px;
-  
 }
 
 /*Boostrap alterações -------------------------------- */
@@ -47,4 +49,99 @@ div.col-md-4 {
 }
 .text-dark {
   font-weight: bolder;
+}
+img.image {
+  width: 440px !important;
+  height: 550px !important;
+  position: absolute;
+  top: 120px;
+  right: 542px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 30%;
+}
+.image-left {
+  transform: translateX(0);
+}
+
+/* Classe CSS para mover a imagem para a metade direita da tela */
+.image-right {
+  transform: translateX(100%);
+}
+
+section#parte-2 {
+  background-color: #fff;
+}
+/* Inicio Parallax*************************************************/
+.parallax h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.parallax p {
+  margin-bottom: 20xp;
+  font-size: 20px;
+}
+.conteudo {
+  color: #777;
+  background-color: rgba(211, 211, 211, 0.5);
+  text-align: justify;
+  padding: 50px 80px;
+}
+.caixa1,
+.caixa2,
+.caixa3,
+.caixa4 {
+  background-image: url(../../../projeto_grupo5_Proz/Imagens/gato1.jpg);
+  position: relative;
+  height: 100%;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.caixa1 {
+  display: grid;
+  align-items: center;
+}
+.caixa2 {
+  background-image: url(../../../projeto_grupo5_Proz/Imagens/gato1.jpg);
+}
+.caixa3 {
+  background-image: url(../../../projeto_grupo5_Proz/Imagens/gato2.jpg);
+}
+.caixa4 {
+  background-image: url(../../../projeto_grupo5_Proz/Imagens/gato7.jpeg);
+}
+
+.conteudo-titulo {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  opacity: 0.3;
+}
+.conteudo-titulo span.titulo {
+  color: #fff;
+  background-color: #111;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+/* Final Parallax*************************************************/
+
+/* Estilos para telas pequenas */
+@media (max-width: 767px) {
+
+}
+
+ /* Estilos para telas médias */
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+}
+
+/* Estilos para telas grandes */
+@media (min-width: 992px) {
+  
 }

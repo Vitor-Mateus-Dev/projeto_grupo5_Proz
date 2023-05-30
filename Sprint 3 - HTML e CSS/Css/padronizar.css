@@ -41,9 +41,10 @@ li {
 }
 
 li a:hover {
-  background-color: #fda7df;
-  color: #6d454c;
-  border-radius: 45%;
+  display: inline;
+  background-color: #d4e4bc;
+  color: #3083dc !important;
+  border-radius: 10em;
 }
 a {
   display: flex;
@@ -61,6 +62,10 @@ a {
   justify-content: center;
   width: 100%;
   padding-bottom: 70px;
+}
+#footer a:hover{
+border-bottom: #6d454c 3px solid;
+
 }
 
 #footer-1 {
@@ -150,6 +155,7 @@ a {
   width: 12%;
   margin-top: 20%;
 }
+#footer h1{color: white;}
 /* boostrap mudanças------------------------------ */
 .text-white:hover {
   color: #6d454c;

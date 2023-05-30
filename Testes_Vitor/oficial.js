@@ -1,53 +1,13 @@
-function registrarUsuario() {
-    // Obter os valores dos campos
-    const nomeSocial = document.getElementById('nomeSocial').value;
-    const email = document.getElementById('email').value;
-    const senha = document.getElementById('senha').value;
-  
-    // Validação dos campos (pode adicionar validações adicionais)
-    if (!nomeSocial || !email || !senha) {
-      alert('Por favor, preencha todos os campos!');
-      return;
-    }
-  
-    // Validar o formato do e-mail
-    if (email.indexOf('@') === -1) {
-      alert('Por favor, insira um endereço de e-mail válido!');
-      return;
-    }
-  
-    // Simulação do registro - Aqui você pode enviar os dados para um servidor ou armazená-los localmente
-  
-    // Exibir o conteúdo para o usuário logado e ocultar os formulários de registro e login
-    document.getElementById('registro-container').style.display = 'none';
-    document.getElementById('login-container').style.display = 'none';
-    document.getElementById('conteudo-usuario').style.display = 'block';
-    document.getElementById('nomeUsuario').textContent = nomeSocial;
+function trocarMetade() {
+  var image = document.querySelector(".image");
+
+  if (image.classList.contains("image-left")) {
+    // Mover a imagem para a metade direita
+    image.classList.remove("image-left");
+    image.classList.add("image-right");
+  } else {
+    // Mover a imagem para a metade esquerda
+    image.classList.remove("image-right");
+    image.classList.add("image-left");
   }
-  
-  function fazerLogin() {
-    // Obter os valores dos campos
-    const loginEmail = document.getElementById('loginEmail').value;
-    const loginSenha = document.getElementById('loginSenha').value;
-  
-    // Validação dos campos (pode adicionar validações adicionais)
-    if (!loginEmail || !loginSenha) {
-      alert('Por favor, preencha todos os campos!');
-      return;
-    }
-  
-    // Validar o formato do e-mail
-    if (loginEmail.indexOf('@') === -1) {
-      alert('Por favor, insira um endereço de e-mail válido!');
-      return;
-    }
-  
-    // Simulação do login - Aqui você pode verificar as credenciais em um servidor ou localmente
-  
-    // Exibir o conteúdo para o usuário logado e ocultar os formulários de registro e login
-    document.getElementById('registro-container').style.display = 'none';
-    document.getElementById('login-container').style.display = 'none';
-    document.getElementById('conteudo-usuario').style.display = 'block';
-    document.getElementById('nomeUsuario').textContent = 'Usuário Logado';
-  }
-  
+}
