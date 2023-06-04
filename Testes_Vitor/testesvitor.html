@@ -1,69 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Estilização do Formulário</title>
-  <style>
-    /* Adicione o código CSS fornecido anteriormente aqui */
-    #form-container {
-      position: relative;
-      width: 100%;
-      height: 300px;
-      overflow: hidden;
-    }
-
-    form {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transition: transform 0.5s ease-in-out;
-    }
-
-    #login-form {
-      transform: translateX(100%);
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    #form-container.show-login #login-form {
-      transform: translateX(0);
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    #form-container.hide-register #register-form {
-      transform: translateX(-100%);
-      opacity: 0;
-      pointer-events: none;
-    }
-  </style>
+    <title>Loja</title>
+    <link rel="stylesheet" href="Css/loja.css" />
+    <script src="padronizar.js"></script>
+    <script src="carrinho.js"></script> <!-- Adicione o arquivo JavaScript para manipular o carrinho -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../Sprint 3 - HTML e CSS/Css/normalize.css" />
 </head>
-<body>
-  <div id="form-container">
-    <form id="register-form">
-      <!-- Campos de registro -->
-      <input type="text" name="username" placeholder="Nome de usuário">
-      <input type="email" name="email" placeholder="E-mail">
-      <input type="password" name="password" placeholder="Senha">
-      <button onclick="moveToLogin(event)">Ir para o login</button>
-    </form>
 
-    <form id="login-form">
-      <!-- Campos de login -->
-      <input type="email" name="email" placeholder="E-mail">
-      <input type="password" name="password" placeholder="Senha">
-      <button>Login</button>
-    </form>
-  </div>
+<body onload="includeHeader(); includeFooter();">
 
-  <script>
-    function moveToLogin(event) {
-      event.preventDefault();
-      var formContainer = document.getElementById("form-container");
-      formContainer.classList.add("show-login");
-      formContainer.classList.add("hide-register");
-    }
-  </script>
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="/Sprint 3 - HTML e CSS/imagens/lojinha/casinhatubarao.webp" class="card-img-top"
+                            alt="Imagem do Produto 1">
+                        <div class="card-price-overlay">R$ 60,00</div> <!-- Preço sobreposto -->
+                        <div class="card-body">
+                            <h5 class="card-title">Casinha Tubarão</h5>
+                            <p class="card-text">Uma casa para pets Destemidos.</p>
+                            <button class="btn btn-primary" onclick="adicionarAoCarrinho('Casinha Tubarão', 60.00)">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Restante do código HTML -->
+            </div>
+        </section>
+    </main>
+
+    <script src="Js/faça_parte.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Script específico da página -->
 </body>
+
 </html>

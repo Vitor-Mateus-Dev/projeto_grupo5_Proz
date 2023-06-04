@@ -1,33 +1,154 @@
-#form-container {
+* {
+  font-family: "League Spartan", sans-serif;
+}
+main {
+  background-color: #d4e4bc;
+}
+/* Estilização Geral ------------------- */
+p {
+  color: #6d454c;
+  font-weight: 540;
+  font-size: 1.2em;
+}
+h1 {
+  color: #6d454c;
+}
+
+/*Section part-1 -------------------------------- */
+#part-1 h3 {
+  color: #6d454c;
+  font-weight: 700;
+}
+section#part-1 img {
+  height: 200px;
+  margin-top: 20px;
+}
+.textinho {
   position: relative;
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
+  top: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+section#part-1 {
+  height: 700px;
+}
+div.col-md-4 {
+  margin-top: 30px;
+  height: 650px;
 }
 
-form {
+#registro-form {
+  height: 570px;
+}
+
+/*Boostrap alterações -------------------------------- */
+.carousel-item {
+  height: 305px;
+}
+.img-fluid {
+  height: 270px !important;
+}
+.text-dark {
+  font-weight: bolder;
+}
+img.image {
+  width: 440px !important;
+  height: 550px !important;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
+  top: 120px;
+  right: 542px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 30%;
 }
-
-#login-form {
-  transform: translateX(100%);
-  opacity: 0;
-  pointer-events: none;
-}
-
-#form-container.show-login #login-form {
+.image-left {
   transform: translateX(0);
-  opacity: 1;
-  pointer-events: auto;
 }
 
-#form-container.hide-register #register-form {
-  transform: translateX(-100%);
-  opacity: 0;
-  pointer-events: none;
+/* Classe CSS para mover a imagem para a metade direita da tela */
+.image-right {
+  transform: translateX(100%);
+}
+
+section#parte-2 {
+  background-color: #fff;
+}
+/* Inicio Parallax*************************************************/
+.parallax h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.parallax p {
+  margin-bottom: 20xp;
+  font-size: 20px;
+}
+.conteudo {
+  color: #777;
+  background-color: rgba(211, 211, 211, 0.5);
+  text-align: justify;
+  padding: 50px 80px;
+}
+.caixa1,
+.caixa2,
+.caixa3,
+.caixa4 {
+  background-image: url(../../../projeto_grupo5_Proz/Imagens/gato1.jpg);
+  position: relative;
+  height: 100%;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.caixa1 {
+  display: grid;
+  align-items: center;
+}
+.caixa2 {
+  background-image: url(../../../projeto_grupo5_Proz/Imagens/gato1.jpg);
+}
+.caixa3 {
+  background-image: url(../../../projeto_grupo5_Proz/Imagens/gato2.jpg);
+}
+.caixa4 {
+  background-image: url(../../../projeto_grupo5_Proz/Imagens/gato7.jpeg);
+}
+
+.conteudo-titulo {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  opacity: 0.3;
+}
+.conteudo-titulo span.titulo {
+  color: #fff;
+  background-color: #111;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+/* Final Parallax*************************************************/
+
+/* Estilos para telas pequenas */
+@media (max-width: 767px) {
+
+}
+
+ /* Estilos para telas médias */
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+}
+
+/* Estilos para telas grandes */
+@media (min-width: 992px) {
+  
+}
+.valid {
+  border: 1px solid green;
+}
+
+.error {
+  border: 1px solid red;
 }

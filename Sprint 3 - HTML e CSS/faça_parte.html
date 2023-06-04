@@ -5,8 +5,9 @@
   <title>Faça Parte</title>
   <link rel="stylesheet" href="Css/estilo-faça_parte.css" />
   <script src="padronizar.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
   <link rel="stylesheet" href="../Sprint 3 - HTML e CSS/Css/normalize.css" />
 </head>
 
@@ -35,13 +36,18 @@
               <h3>Links Clicáveis</h3>
               <p>Formas de nos ajudar:</p>
               <ul class="list-group">
-                <li class="list-group-item"><a href="#nossalojinha" class="link" onclick="linkClicado(1)">Comprando em nossa Lojinha</a></li>
-                <li class="list-group-item"><a href="#compartilhandoconosco" class="link" onclick="linkClicado(2)">Compartilhando</a></li>
-                <li class="list-group-item"><a href="#marketingconosco" class="link" onclick="linkClicado(3)">Marketing</a></li>
-                <li class="list-group-item"><a href="#programeconosco" class="link" onclick="linkClicado(4)">Progamando</a></li>
+                <li class="list-group-item"><a href="#nossalojinha" class="link" onclick="linkClicado(1)">Comprando em
+                    nossa Lojinha</a></li>
+                <li class="list-group-item"><a href="#compartilhandoconosco" class="link"
+                    onclick="linkClicado(2)">Compartilhando</a></li>
+                <li class="list-group-item"><a href="#marketingconosco" class="link"
+                    onclick="linkClicado(3)">Marketing</a></li>
+                <li class="list-group-item"><a href="#programeconosco" class="link"
+                    onclick="linkClicado(4)">Progamando</a></li>
               </ul>
             </form>
           </div>
+
           <div class="col-md-4 " id="logado">
             <div id="idform">
               <h2 class="text-center">Registro</h2>
@@ -51,13 +57,13 @@
                   <input type="text" id="nomeCompleto" class="form-control" placeholder="Luth Melhor Prof" />
                 </div>
                 <div class="mb-3">
-                  <label for="nomeSocial" class="form-label">Nome Social</label>
+                  <label for="nomeSocial" class="form-label">Nome Social - Como iremos te chamar</label>
                   <input type="text" id="nomeSocial" class="form-control"
                     placeholder="Dá uns descontos nas pizzas pf" />
                 </div>
                 <div class="mb-3">
-                  <label for="email" class="form-label">Email:</label>
-                  <input type="email" id="email" class="form-control" placeholder="exemplo@outlook.com" />
+                  <label for="email" class="form-label ">Email:</label>
+                  <input type="email" id="email" class="form-control " placeholder="exemplo@outlook.com" />
                 </div>
                 <div class="mb-3">
                   <label for="cpf" class="form-label">CPF:</label>
@@ -83,7 +89,7 @@
           </div>
 
           <div class="col-md-4 " id="logado">
-            <img src="/Imagens/ajude.jpg" alt="" class="image image-right" id=  "image-frente" />
+            <img src="/Imagens/ajude.jpg" alt="" class="image image-right" id="image-frente" />
             <div id="login-container" class="container d-none">
               <h2>Login</h2>
               <form id="login-form">
@@ -95,7 +101,7 @@
                   <label for="loginSenha" class="form-label">Senha:</label>
                   <input type="password" id="loginSenha" class="form-control" />
                 </div>
-                <button type="button" class="btn btn-primary" onclick="fazerLogin()" >
+                <button type="button" class="btn btn-primary" onclick="fazerLogin()">
                   Entrar
                 </button>
                 <button type="button" class="btn btn-primary" onclick="" id="botaoregistro">
@@ -107,13 +113,12 @@
         </div>
       </div>
     </section>
-
     <section class="parallax d-none" id="parte-2">
       <div>
         <div id="nossalojinha" class="caixa1">
           <img src="/Sprint 3 - HTML e CSS/imagens/lojinha/11.png" alt="" width="100%" height="500px" />
           <div class="conteudo-titulo">
-            <span  class="titulo">Comprando em nossa lojinha</span>
+            <span class="titulo">Comprando em nossa lojinha</span>
           </div>
         </div>
         <div class="conteudo">
@@ -163,18 +168,21 @@
           </p>
         </div>
       </div>
+
     </section>
   </main>
 
   <script src="Js/faça_parte.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <!-- Script específico da página -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
