@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: "League Spartan", sans-serif;
 }
 
 section.container img {
@@ -17,7 +18,7 @@ section.container img {
 .card {
     margin: 20px;
     align-items: center;
-    background-color: #d4e4bc;
+    background-color: #d4e4bc !important;
 }
 
 main {
@@ -31,4 +32,22 @@ p {
 h5 {
     color: #3083dc;
     font-weight: 900;
+}
+.tamanho img{
+    width: 200px;
+    height: 500px;
+}
+.tamanho p{
+    color: black;
+    font-weight: bold;
+}
+.tamanho h1{
+    font-weight: bold;
+    color: #6d454c;
+}
+.img_borda{
+    border-radius: 50% !important;
+}
+.card{
+    border: none !important;
 }

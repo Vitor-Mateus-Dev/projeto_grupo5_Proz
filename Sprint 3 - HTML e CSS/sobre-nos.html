@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo-sobrenos.css">
+    <script src="index.js"></script>    
+    <title>Sobre Nós</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500;600;700&display=swap');</style>
+</head>
+<body>
+    <header>
+        <img src="imagens/cabeçalho.png" alt="retangulo azul" id="retangulo-azul">
+        <div id="menu-principal">
+            <ul>
+                <li><a href="home.html" class="item-menu">Home</a></li>
+                <li><a href="#" class="item-menu">Sobre Nós</a></li>
+                <li><a href="/Sprint 2 - Telas/doe.html" class="item-menu">Faça Parte</a></li>
+                <li><a href="#" class="item-menu">Loja</a></li>
+                <li><a href="#" class="item-menu">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="caixa-1">
+            <div id="bloco-1">
+                <img src="imagens/3.png" alt="logo amor com bigodes" id="logo-1">
+                <h2 id="texto-1">Faça um tour <br> pela nossa história</h2>
+            </div>
+            <div id="historia">
+                <details class="perguntas">
+                    <summary class="titulo">2015: a origem encantadora em Vila Esperança</summary>
+                    <p class="texto-corpo">Na cidade de Vila Esperança, em 2015, Zara Leal, Enzo Pereira e Laura Mendes se conheceram no curso de Veterinária.
+                        <br>Durante a faculdade, eles se envolveram em trabalhos voluntários e, em 2018, durante uma aula sobre proteção animal, 
+                        <br>tiveram a ideia de criar uma ONG. Com ação local na cidade, nasceu a Amor com Bigodes.
+                    </p>
+                </details>
+                <details class="perguntas">
+                    <summary class="titulo">2019: a equipe unida pela paixão</summary>
+                    <p class="texto-corpo">Em 2019, Zara, Enzo e Laura se uniram a Ana Costa, uma programadora visionária,
+                        <br>e a Pedro Santos, um designer talentoso. 
+                        <br>Eles contribuíram para a digitalização do projeto, desenvolvendo sistemas e plataformas para facilitar a 
+                        <br>captação de recursos e a comunicação da Amor com Bigodes. 
+                    </p>
+                </details>
+                <details class="perguntas">
+                    <summary class="titulo">2020: espalhando carinho e proteção por todo o Brasil</summary>
+                    <p class="texto-corpo">Depois de expandir a atuação para todo o Brasil em 2020, a Amor com Bigodes decolou. 
+                        <br>Com a união dos cinco e apoio de muitas pessoas iluminadas que compartilham do mesmo amor,
+                        <br>a ONG conseguiu ampliar sua presença online e alcançar mais pessoas sensibilizadas pela causa.
+                    </p>
+                </details>
+                <details class="perguntas">
+                    <summary class="titulo">Hoje: a jornada inspiradora da Amor com Bigodes</summary>
+                    <p class="texto-corpo">Hoje, a Amor com Bigodes é uma referência na proteção animal, 
+                        <br>proporcionando recursos e apoio financeiro a abrigos e clínicas veterinárias comunitárias 
+                        <br>de forma transparente e segura. 
+                        <br>Com muito orgulho e dedicação, a organização tem transformado a vida de inúmeros animais no Brasil.
+                    </p>
+                </details>
+            </div>
+            <div id="bloco-2">
+                <img src="imagens/6.png" alt="gato com filtro azul" class="pet">
+                <p id="texto-2">Mais de 50<br>instituições impactadas. 
+                    <br><br> Mais de 1.000<br> itens vendidos na lojinha.
+                    <br><br>Mais de 5.800<br> doações recebidas pela plataforma.
+                    <br><br>Cerca de 20.000<br> animais beneficiados.</p>
+                <img src="imagens/7.png" alt="cachorro com filtro azul" class="pet">
+            </div>
+            <div id="bloco-3">
+                <img src="imagens/imagens-gif/14.gif" alt="botão faça parte" id="botao-faca-parte">
+            </div>
+            <div id="bloco-4">
+                <img src="imagens/imagens-gif/12.gif" alt="gif de homem brincando com um cachorro marrom" id="gif-1">
+                <div id="caixa-botoes">
+                    <div id="titulos-botao">
+                        <button class="botao" onclick="abrirTab('missao')">Missão</button>
+                        <button class="botao" onclick="abrirTab('visao')">Visão</button>
+                        <button class="botao" onclick="abrirTab('valores')">Valores</button>
+                    </div>
+                    <div id="missao" class="conteudo">
+                        <h3>Missão</h3>
+                        <p>Promover a <b>proteção</b> e o <b>bem-estar</b> dos animais, 
+                            <br><br>captando e distribuindo recursos para instituições 
+                            <br><br>dedicadas à sua causa. 
+                            <br><br>Buscamos proporcionar um ambiente seguro, 
+                            <br><br>amoroso e livre de crueldade, onde cada ser vivo, 
+                            <br><br>independente de sua espécie, receba o <b>respeito</b> 
+                            <br><br>e os <b>cuidados</b> que merece.
+                        </p>
+                    </div>
+                    <div id="visao" class="conteudo">
+                        <h3>Visão</h3>
+                        <p>Ser uma <b>referência</b> em apoio e defesa 
+                            <br><br>dos direitos dos animais, trabalhando em parceria
+                            <br><br>com abrigos, clínicas veterinárias comunitárias e 
+                            <br><br>projetos educacionais. 
+                            <br><br>Buscamos criar uma <b>sociedade consciente</b>, onde todos
+                            <br><br>compreendam a importância da proteção animal
+                            <br><br>e atuem em prol de um mundo mais compassivo e 
+                            <br><br>acolhedor.
+                        </p>
+                    </div>
+                    <div id="valores" class="conteudo">
+                        <h3>Valores</h3>
+                        <p>1- <b>Amor pelos animais:</b> colocamos o bem-estar e 
+                            <br><br>o amor pelos animais no centro de todas as nossas
+                            <br><br>ações e decisões.
+                            <br><br>Cada vida é preciosa e merece ser tratada com
+                            <br><br>respeito e compaixão.
+                            <br><br><br>2- <b>Integridade:</b> agimos com transparência,
+                            <br><br>honestidade e ética em todas as nossas atividades.
+                            <br><br>Nosso compromisso é manter a confiança da
+                            <br><br>comunidade que apoiamos.
+                            <br><br><br>3- <b>Colaboração:</b> Valorizamos parcerias e colaborações,
+                            <br><br>reconhecendo que juntos somos mais fortes.
+                            <br><br>Trabalhamos em equipe, compartilhando conhecimento
+                            <br><br>e recursos para alcançar um impacto significativo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <section id="footer-1">
+            <div id="coluna-3">
+                <h1 id="box-3">A ONG</h1>
+                <h3 class="boxes">Sobre Nós</h3>
+                <h3 class="boxes">Faça Parte</h3>
+                <h3 class="boxes">Lojinha</h3>
+                <h3 class="boxes">Contato</h3>
+            </div>
+            <div id="coluna-2">
+                <a href="home.html" class="item-menu"><img src="imagens/2.png" alt="logo amor com bigodes" id="logo-acb"></a>
+            </div>
+            <div id="coluna-1">
+                <h1 id="box-1">Amor com Bigodes</h1>
+                <h3 id="box-2"> All Rights Reserved @ <br>amorcombigodes.com</h3>
+                <p id="box-logos">
+                    <a href="#"><img src="imagens/logos-redes/email.png" alt="logo-email" class="logo-redes"></a>
+                    <a href="#"><img src="imagens/logos-redes/facebook.png" alt="logo-facebook" class="logo-redes"></a>
+                    <a href="#"><img src="imagens/logos-redes/instagram.png" alt="logo-instagram" class="logo-redes"></a>
+                </p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

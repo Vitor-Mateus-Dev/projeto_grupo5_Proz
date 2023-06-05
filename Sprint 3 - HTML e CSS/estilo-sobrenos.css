@@ -1,0 +1,306 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: "League Spartan", sans-serif;
+}
+  
+header {
+    background-color: #3083dc;
+    position: relative;
+}
+  
+#retangulo-azul {
+    width: 100%;
+    height: 12em;
+}
+  
+.item-menu {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+  
+#menu-principal {
+    position: absolute;
+    bottom: 0em;
+    width: 100%;
+}
+  
+ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 2%;
+    justify-content: space-evenly;
+}
+  
+li {
+    display: inline;
+    font-size: 3em;
+    margin: 1%;
+}
+  
+li a:hover {
+    display: inline;
+    background-color: #d4e4bc;
+    font-size: 0.9em;
+    color: #3083dc;
+    font-weight: 600;
+    border-radius: 10em;
+    padding: 0.3em 0.5em 0.1em 0.5em
+}
+  
+  
+main{
+    display: flex;
+    flex-direction: column;
+}
+  
+.caixa-1{
+    display: flex;
+    flex-direction: column;
+    background-color: #FDA7DF;
+
+}
+  
+#bloco-1{
+    display: flex;
+    background-color: #FDA7DF;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 6em;
+}
+
+#logo-1 {
+    display: flex;
+    width: 32%;
+    height: 32%;
+    margin-top: 5%;
+}
+
+#texto-1{
+    display: flex;
+    align-items: center;
+    font-size: 5em;
+    color: #6D454C;
+    margin-top: 6.5%;
+}
+
+#historia{
+    display: flex;
+    flex-direction: column;
+    background-color: #FDA7DF;
+    margin-top: 15em;
+    padding-bottom: 15em;
+}
+
+.perguntas{
+    display: flex;
+    background-color: #FDA7DF;
+    padding: 1em;
+}
+
+.titulo{
+    display: flex;
+    background-color: #3083dc;
+    color: white;
+    font-weight: 500;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    padding: 0.5em;
+    margin-left: 7em;
+    margin-bottom: 1em;
+    border-radius: 2em;
+}
+
+.texto-corpo{
+    display: flex;
+    background-color: white;
+    color:#6D454C;
+    width: 70%;
+    font-size: 2.3em;
+    justify-content: center;
+    text-align:center;
+    padding: 2em 1em 2em 1em;
+    margin-left: 10.7em;
+    margin-top: -1.3em;
+    border-end-end-radius: 1em;
+    border-end-start-radius: 1em;
+}
+
+#bloco-2{
+    display: flex;
+    background-color: white;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 8%;
+}
+
+#texto-2{
+    display: flex;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 500;
+    color: #6D454C;
+}
+#bloco-3{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+#botao-faca-parte{
+    display: flex;
+    width: 15%;
+    height: 15%;
+    margin-top: -10em;
+}
+
+#bloco-4{
+    display: flex;
+    background-color: #d4e4bc;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10em;
+}
+
+#gif-1{
+    display: flex;
+    width: 40%;
+    height: 40%;
+    margin: 10em;
+}
+
+#caixa-botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#titulos-botao{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.botao{
+    display: flex;
+    background-color: #3083dc;
+    color: white;
+    justify-content: center;
+    width: 100%;
+    font-size: 2.5em;
+    font-weight: 600;
+    padding: 1em 2em 1em 2em;
+    border: none;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: #FDA7DF;
+    color: #6D454C;
+}
+.botao.ativo{
+    background-color: #FDA7DF;
+    color: #6D454C;
+}
+
+.conteudo{
+    display: none;
+    background-color: white;
+    justify-content: center;
+    width: 100%; 
+    font-size: 2.3em;
+    color: #6D454C;
+    text-align: center;
+    border-end-end-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+#footer {
+    background-color: #3083dc;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+  
+#footer-1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+  
+#coluna-3 {
+    display: flex;
+    flex-direction: column;
+    width: 8%;
+    align-items: center;
+    font-size: 1.5em;
+}
+  
+#box-3 {
+    font-weight: 600;
+}
+  
+.boxes {
+    font-weight: 400;
+    margin-top: 3%;
+}
+
+.boxes:hover {
+    display: inline;
+    background-color: #d4e4bc;
+    font-size: 1em;
+    color: #3083dc;
+    font-weight: 600;
+    border-radius: 10em;
+    padding: 0.3em 0.5em 0.1em 0.5em
+}
+  
+#coluna-2 {
+    width: 15%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+  
+#logo-acb {   
+    display: flex;
+    width: 100%;
+}
+  
+#coluna-1 {
+    width: 15%;
+    font-size: 1.5em;
+}
+  
+#box-1 {
+    font-weight: 600;
+}
+  
+#box-2 {
+    font-weight: 400;
+}
+  
+#box-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.logo-redes {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+}
+  
