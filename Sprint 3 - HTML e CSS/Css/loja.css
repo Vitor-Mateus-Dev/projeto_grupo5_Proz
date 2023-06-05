@@ -44,6 +44,8 @@ h5 {
 .tamanho h1{
     font-weight: bold;
     color: #6d454c;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 .img_borda{
     border-radius: 50% !important;
