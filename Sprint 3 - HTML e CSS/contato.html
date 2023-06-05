@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contato</title>
+    <link rel="stylesheet" href="Css/contato.css" />
+    <script src="padronizar.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../Sprint 3 - HTML e CSS/Css/normalize.css" />
+  </head>
+  <body onload="includeHeader(); includeFooter();">
+    <!-- Conteúdo da página -->
+    <main>
+      <section id="part-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" style="border: 1px solid  rgb(218, 213, 213)">
+                <img src="imagens/3.png" alt="" />
+                <h3>
+                    Faça a diferença na vida de cães e <br />gatos resgatados sem
+                    sair de casa!
+                </h3>
+
+                <p>
+                    Dúvidas?! Fale conosco!
+                    <br><br> 
+                    Em poucos cliques, destine boas ações e doações de forma segura
+                    para instituições especializadas na causa animal.
+                </p>
+                </div>
+                <div class="col-md-4" style="border: 1px solid rgb(218, 213, 213)">
+                <h2 class="text-center">Contato</h2>
+                    <form id="registro-form">
+                        <div class="mb-3">
+                        <label for="nomeCompleto" class="form-label"
+                            >Nome Completo:</label
+                        >
+                        <input
+                            type="text"
+                            id="nomeCompleto"
+                            class="form-control"
+                            required
+                        />
+                        </div>
+                        <div class="mb-3">
+                        <label for="nomeSocial" class="form-label">Nome Social</label>
+                        <input
+                            type="text"
+                            id="nomeSocial"
+                            class="form-control"
+                            required
+                        />
+                        </div>
+                        <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            class="form-control"
+                            required
+                        />
+                        </div>
+                        <div class="mb-3">
+                        <label for="text" class="form-label">Descrição, Dúvida ou Comentário:</label>
+                        <input
+                            type="text"
+                            id="text"
+                            class="form-control"
+                            pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                            placeholder="Ex. Dificuldade em finalizar cadastro"
+                            required
+                        />
+                        </div>
+                        <button
+                            type="button"
+                            class="btn btn-primary mt-2"
+                            onclick="registrarUsuario()"
+                        >
+                            Contato
+                        </button>
+                        </div>
+                </form>
+                <div class="col-md-4" style="border: 1px solid ">
+                    <div id="login-container" class="container">
+                      <h2>Dúvidas Frequentes</h2>
+                      <form id="pergunta-form">
+                        <div class="mb-3">
+                          <label for="pergunta01" class="form-label">Como funciona a assinatura mensal?</label
+                          > <br>
+                          <text>Muito simples!<br> 
+                            Faça seu cadastro, vá até a lojinha e escolha um plano. 
+                            Você poderá pagar com cartão ou boleto.</text>
+                        </div>
+                        <div class="mb-3">
+                          <label for="pergunta02" class="form-label"> Como funciona a adoção?</label>
+                          <br><br>
+                          <text>Simples! Amou um dos animais de um dos parceiros divulgados aqui?! 
+                            Clica na imagem e entra em contato com o cuidador. </text>
+                        </div>
+
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </section>
+    </main>
+
+    <script src="Js/contato.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Script específico da página -->
+  </body>
+</html>

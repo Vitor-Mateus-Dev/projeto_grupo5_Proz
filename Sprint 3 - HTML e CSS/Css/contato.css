@@ -1,0 +1,51 @@
+* {
+    font-family: "League Spartan", sans-serif;
+  }
+  main {
+    background-color: #d4e4bc;
+  }
+  /* Estilização Geral ------------------- */
+  p {
+    color: #6d454c;
+    font-weight: 540;
+    font-size: 1.1em;
+  }
+
+  /*Section part-1 -------------------------------- */
+  #part-1 h3 {
+    color: #6d454c;
+    font-weight: 700;
+  }
+  section#part-1 img {
+    height: 200px;
+    margin-top: 20px;
+  }
+  .textinho {
+    position: relative;
+    top: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  section {
+    height: 700px;
+  }
+  div.col-md-4 {
+    margin-top: 30px;
+    height: 650px;
+  }
+
+  #registro-form {
+    height: 570px;
+
+  }
+
+  /*Boostrap alterações -------------------------------- */
+  .carousel-item {
+    height: 305px;
+  }
+  .img-fluid {
+    height: 270px !important;
+  }
+  .text-dark {
+    font-weight: bolder;
+  }
+
