@@ -1,0 +1,50 @@
+primeiro rodar:  CREATE TABLE usuario, CREATE TABLE doacoes, CREATE TABLE acb, CREATE TABLE ongs;
+segundo rodar: INSERT INTO usuario, iNSERT INTO ongs, INSERT INTO acb;
+terceiro rodar: CREATE TABLE telefone, INSERT INTO telefone,CREATE TABLE doacoes_ongs,INSERT INTO doacoes;
+quarto rodar: CREATE TABLE acb_recebimentos, INSERT INTO doacoes_ongs, INSERT INTO acb_recebimentos
+
+-------------Exemplos de pesquisas--------------
+1 Selecionar todas as informações de um usuário específico, incluindo suas doações:
+SELECT *
+FROM usuario
+LEFT JOIN doacoes ON usuario.usuario_id = doacoes.doador_id
+WHERE usuario.usuario_id = 1;
+
+2 Obter o nome da ONG e o valor da doação correspondente:
+SELECT ongs.nome_ong, doacoes.valor
+FROM doacoes
+INNER JOIN doacoes_ongs ON doacoes.doacoes_id = doacoes_ongs.doacao_id
+INNER JOIN ongs ON doacoes_ongs.ong_id = ongs.id_ongs;
+
+3 Listar todas as doações feitas por um usuário em particular, incluindo os dados da ONG beneficiada:
+SELECT doacoes.*, ongs.nome_ong
+FROM doacoes
+INNER JOIN doacoes_ongs ON doacoes.doacoes_id = doacoes_ongs.doacao_id
+INNER JOIN ongs ON doacoes_ongs.ong_id = ongs.id_ongs
+WHERE doacoes.doador_id = 1;
+
+4 Recuperar todas as doações recebidas pela ONG com ID 3, juntamente com os dados do doador:
+SELECT doacoes.*, usuario.nome AS nome_doador
+FROM doacoes
+INNER JOIN doacoes_ongs ON doacoes.doacoes_id = doacoes_ongs.doacao_id
+INNER JOIN usuario ON doacoes.doador_id = usuario.usuario_id
+WHERE doacoes_ongs.ong_id = 3;
+
+5 Obter o total de doações recebidas por cada ONG:
+SELECT ongs.nome_ong, COUNT(doacoes_ongs.doacao_id) AS total_doacoes
+FROM ongs
+LEFT JOIN doacoes_ongs ON ongs.id_ongs = doacoes_ongs.ong_id
+GROUP BY ongs.nome_ong;
+
+6 Listar todas as doações recebidas pela ONG com ID 2, incluindo as informações do doador:
+SELECT doacoes.*, usuario.nome AS nome_doador
+FROM doacoes
+INNER JOIN doacoes_ongs ON doacoes.doacoes_id = doacoes_ongs.doacao_id
+INNER JOIN usuario ON doacoes.doador_id = usuario.usuario_id
+WHERE doacoes_ongs.ong_id = 2;
+(obs: nesse caso o doador 2 não fez nenhuma doação, se quiser conferir se o codigo funciona é só trocar 2 por 1 ou outro número.)
+
+7 Recuperar o valor total de todas as doações feitas por um usuário específico:
+SELECT SUM(doacoes.valor) AS total_doacoes
+FROM doacoes
+WHERE doacoes.doador_id = 1;
