@@ -1,73 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="/Sprint 3 - HTML e CSS/Header_Footer/padronizar.js"
-    />
-    <link rel="stylesheet" href="/Sprint 3 - HTML e CSS/Css/padronizar.css" />
-    <style>
-      a.text-white:hover {
-        color: #343a40; /* Ou qualquer outra cor escura desejada */
-      }
-    </style>
-    <script>
-      // Função para carregar o conteúdo do header em todas as páginas
-      function includeHeader() {
-        fetch("header.html")
-          .then((response) => response.text())
-          .then((content) => {
-            document.getElementById("header").innerHTML = content;
-          });
-      }
-    </script>
-  </head>
-  <body>
-    <header>
-      <img
-        src="imagens/cabeçalho.png"
-        alt="retangulo azul"
-        id="retangulo-azul"
-      />
-      <div id="menu-principal">
-        <ul class="nav">
-          <li class="nav-item">
-            <a
-              class="nav-link bg-pink text-white"
-              href="home.html"
-              class="item-menu"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link bg-pink text-white" href="sobre-nos.html" class="item-menu"
-              >Sobre Nós</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link bg-pink text-white"
-              href="/Sprint 3 - HTML e CSS/faça_parte.html"
-              class="item-menu"
-              >Faça Parte</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link bg-pink text-white" href="lojinha.html" class="item-menu"
-              >Loja</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link bg-pink text-white" href="contato.html" class="item-menu"
-              >Contato</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/Sprint 3 - HTML e CSS/Header_Footer/padronizar.js" />
+  <link rel="stylesheet" href="/Sprint 3 - HTML e CSS/Css/padronizar.css" />
+  <style>
+    a.text-white:hover {
+      color: #343a40;
+      /* Ou qualquer outra cor escura desejada */
+    }
+  </style>
+  <script>
+    // Função para carregar o conteúdo do header em todas as páginas
+    function includeHeader() {
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((content) => {
+          document.getElementById("header").innerHTML = content;
+        });
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <img src="imagens/cabeçalho.png" alt="retangulo azul" id="retangulo-azul" />
+    <div id="menu-principal">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link bg-pink text-white" href="home.html" class="item-menu">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-pink text-white" href="sobre-nos.html" class="item-menu">Sobre Nós</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-pink text-white" href="/Sprint 3 - HTML e CSS/faça_parte.html" class="item-menu">Faça
+            Parte</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-pink text-white" href="lojinha.html" class="item-menu">Loja</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-pink text-white" href="contato.html" class="item-menu">Contato</a>
+        </li>
+
+      </ul>
+    </div>
+  </header>
+</body>
+
 </html>
